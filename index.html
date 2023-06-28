@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Balenciaga</title>
+    
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#" ><img src="logo/logo.png" class="logo"></a>
+
+      <ul>
+        <li><a href="whatsnew.html">What's New</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>This is Not Art<br>It's <span>Gold</span></h2>
+        <p>Cristóbal Balenciaga founded the House in 1917 in his home of Spain. In 1937, he established the brand in Paris, designing its collections there until 1968.Cristóbal Balenciaga had a reputation as a couturier of uncompromising standards and was referred to as "the master of us all" by Christian Dior and as “ The Couturier of the Couturiers” by Gabrielle Chanel. The ultra-modern shapes were trademarks of the house.</p>
+        <a href="learnmore.html">Learn More</a>
+      </div>  
+      <div class="imgBox">
+        <img src="Tienda ropa/1Ltm pantalon cuerpo entero.png" class="Balenciaga">
+      </div>
+    </div>
+    <ul class="ropa"> 
+      <li><img src="Tienda ropa/1Ltm pantalon.png" onclick="imgSlider('Tienda ropa/1Ltm pantalon cuerpo entero.png');changeCircleColor('#000000')"></li>
+      <li><img src="Tienda ropa/2Dark pantalon.png" onclick="imgSlider('Tienda ropa/2Dark pantalon cuerpo entero.png');changeCircleColor('#c0b01b')"></li>
+      <li><img src="Tienda ropa/3Chinese pantalon.png" onclick="imgSlider('Tienda ropa/3Chinese pantalon cuerpo entero.png');changeCircleColor('#000000')"></li>
+    </ul>
+    <ul class="rrss">
+      <li><a href="https://www.facebook.com/Balenciaga/?locale=es_ES" target="_blank"><img src="Tienda ropa/facebook.png"></a></li>
+      <li><a href="https://twitter.com/balenciagasneak?lang=es" target="_blank"><img src="Tienda ropa/twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/balenciaga/" target="_blank"><img src="Tienda ropa/instagram.png"></a></li>
+    </ul>
+ </section>
+ <script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.Balenciaga').src =anything;
+  }
+
+  function changeCircleColor(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+  }
+ </script>
+</body>
+</html>
